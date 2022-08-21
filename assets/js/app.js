@@ -13,7 +13,6 @@ document
     setElementValue("player-expense", playerExpenses);
   });
 
-
 document
   .getElementById("calculate-total")
   .addEventListener("click", function () {

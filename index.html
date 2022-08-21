@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Your Best Players</title>
+    <title>Make Your Dream Football Team</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
@@ -35,13 +35,12 @@
             <div class="hero-overlay bg-opacity-0"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-xl md:max-w-3xl my-10">
-                    <h1 class="title-font text-5xl md:text-7xl text-orange-600 mb-2 mt-10">Select Your Best Five</h1>
+                    <h1 class="title-font text-5xl md:text-7xl text-orange-600 mb-2 mt-10">Make Your Own Team</h1>
                     <div class="flex justify-end">
-                        <img class="" src="assets/img/title-bottom.png" alt="">
+                        <img class="w-fit" src="assets/img/title-bottom.png" alt="">
                     </div>
-                    <p class="text-lg text-center text-white mb-10">Amet minim mollit non deserunt ullamco est sit
-                        aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
-                        consequat sunt nostrud amet.</p>
+                    <p class="text-lg text-center text-white mb-10">Build Your Dream Team. Here you can choose five players for your Dream Team. You can also calculate your total expenses for your team.
+                    </p>
                 </div>
             </div>
         </div>
@@ -60,7 +59,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/messi.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/messi.png" alt="Lionel Messi Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Lionel Messi</h2>
@@ -77,7 +76,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/neymar.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/neymar.png" alt="Neymar Jr Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Neymar Jr</h2>
@@ -94,7 +93,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/mbappee.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/mbappee.png" alt="Kylian Mbappé Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Kylian Mbappé</h2>
@@ -111,7 +110,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/machado.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/machado.png" alt="Vítor Machado Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Vítor Machado</h2>
@@ -128,7 +127,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/sergio-ramos.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/sergio-ramos.png" alt="Sergio Ramos Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Sergio Ramos</h2>
@@ -145,7 +144,7 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/renato-sanches.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/renato-sanches.png" alt="Renato Sanches Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Renato Sanches</h2>
@@ -162,11 +161,65 @@
                 <div>
                     <div class="border border-slate-600 bg-black">
                         <div>
-                            <img class="w-full" src="assets/img/cr7.png" alt="Shoes" />
+                            <img class="w-full" src="assets/img/cr7.png" alt="Cristiano Ronaldo Image" />
                         </div>
                         <div class="card-body text-center">
                             <h2 class="text-2xl font-extrabold text-white">Cristiano Ronaldo</h2>
                             <p class="text-gray-500 mb-1">815 Goals • 273 Assist</p>
+                            <div class="justify-center">
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Player item 8 -->
+                <div>
+                    <div class="border border-slate-600 bg-black">
+                        <div>
+                            <img class="w-full" src="assets/img/harry-kane.png" alt="Harry Kane Image" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-extrabold text-white">Harry Kane</h2>
+                            <p class="text-gray-500 mb-1">178 Goals • 154 Assist</p>
+                            <div class="justify-center">
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Player item 9 -->
+                <div>
+                    <div class="border border-slate-600 bg-black">
+                        <div>
+                            <img class="w-full" src="assets/img/luka-mod.png" alt="Luka Modrić Image" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-extrabold text-white">Luka Modrić</h2>
+                            <p class="text-gray-500 mb-1">70 Goals • 65 Assist</p>
+                            <div class="justify-center">
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Single Player item 10 -->
+                <div>
+                    <div class="border border-slate-600 bg-black">
+                        <div>
+                            <img class="w-full" src="assets/img/thiago-silva.png" alt="Thiago Silva Image" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-2xl font-extrabold text-white">Thiago Silva</h2>
+                            <p class="text-gray-500 mb-1">37 Goals • 75 Assist</p>
                             <div class="justify-center">
                                 <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
@@ -275,17 +328,12 @@
     </main>
 
 
-
+    <!-- Footer Section  -->
     <footer class="px-5 py-10 border-t text-center text-gray-400 text-lg border-gray-600">
 
         <p>Copyright @ 2022 All Rights Reserved.</p>
 
     </footer>
-
-
-
-
-
 
 
     <!-- Selection Warning Popup  -->
@@ -300,7 +348,6 @@
         </div>
     </div>
 
-
     <!-- Error Warning Popup  -->
     <div class="modal" id="errorWarning">
         <div class="modal-box bg-gray border-slate-600 border-2 shadow-2xl">
@@ -312,11 +359,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <!-- Connect JS File  -->

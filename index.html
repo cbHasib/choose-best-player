@@ -35,7 +35,7 @@
                 <div class="max-w-3xl my-10">
                     <h1 class="title-font text-7xl text-orange-600 mb-2 mt-10">Select Your Best Five</h1>
                     <div class="flex justify-end">
-                    <img class="" src="assets/img/title-bottom.png" alt="">
+                        <img class="" src="assets/img/title-bottom.png" alt="">
                     </div>
                     <p class="text-lg text-center text-white mb-10">Amet minim mollit non deserunt ullamco est sit
                         aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
@@ -48,7 +48,7 @@
 
     <main class="container pt-16 px-20 pb-40">
         <!-- Structure Build  -->
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-4 gap-7">
 
             <!-- Player Card  -->
             <div class="col-span-3 grid grid-cols-3 gap-4">
@@ -64,16 +64,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Lionel Messi</h2>
                             <p class="text-gray-500 mb-1">977 Goals • 332 Assist</p>
                             <div class="justify-center">
-                                <button class="btn btn-primary btn-wide font-bold text-base"
+                                <button class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 <!-- Single Player item 2  -->
                 <div>
@@ -85,15 +81,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Neymar Jr</h2>
                             <p class="text-gray-500 mb-1">280 Goals • 174 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
 
                 <!-- Single Player item 3  -->
                 <div>
@@ -105,16 +98,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Kylian Mbappé</h2>
                             <p class="text-gray-500 mb-1">63 Goals • 17 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 <!-- Single Player item 4  -->
                 <div>
@@ -126,16 +115,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Vítor Machado</h2>
                             <p class="text-gray-500 mb-1">14 Goals • 39 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 <!-- Single Player item 5 -->
                 <div>
@@ -147,16 +132,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Sergio Ramos</h2>
                             <p class="text-gray-500 mb-1">107 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 <!-- Single Player item 6 -->
                 <div>
@@ -168,17 +149,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Renato Sanches</h2>
                             <p class="text-gray-500 mb-1">16 Goals • 20 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
 
                 <!-- Single Player item 7 -->
                 <div>
@@ -190,13 +166,12 @@
                             <h2 class="text-2xl font-extrabold text-white">Cristiano Ronaldo</h2>
                             <p class="text-gray-500 mb-1">815 Goals • 273 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                <button disable class="btn btn-primary btn-block font-bold text-base"
                                     onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
 
             </div>
@@ -206,8 +181,7 @@
             <!-- SideBar -->
             <div>
 
-
-
+                <!-- Selected Player List  -->
                 <div class="card-body bg-black devide-y">
                     <div>
                         <h2 class="text-center text-2xl font-extrabold text-white">Selected - V</h2>
@@ -227,19 +201,17 @@
 
                     </div>
                 </div>
+                <!-- End Selected Player List  -->
 
 
-
-
+                <!-- Cost Calculation  -->
                 <div class="card-body bg-black devide-y mt-5">
                     <div>
                         <h2 class="text-center text-2xl font-extrabold text-white">Budget</h2>
                         <img class="mx-auto mt-2" src="assets/img/bottom-underline.png" alt="">
                     </div>
                     <div>
-
-
-
+                        <!-- Per Player Calculation  -->
                         <div class="flex gap-3 justify-around items-center my-3">
                             <p class="font-semibold text-lg text-gray-400">Per Player</p>
                             <input id="per-player-input-field" type="text" placeholder="$1000"
@@ -248,16 +220,18 @@
 
                         <div class="justify-center">
                             <button id="calculate-player-expense"
-                                class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate</button>
+                                class="my-3 btn btn-primary btn-block font-bold text-base">Calculate</button>
                         </div>
 
+
+
+                        <!-- Total Expense Calculation  -->
                         <div class="flex gap-3 justify-between items-center my-5">
                             <div class="font-semibold text-lg text-gray-400">Player Expense</div>
                             <div class="font-semibold text-lg text-white">$<span id="player-expense">00</span></div>
                         </div>
 
-
-
+                        <!-- Manager Expense  -->
                         <div class="py-2">
                             <div class="flex gap-3 justify-around items-center my-3">
                                 <p class="font-semibold text-lg text-gray-400">Manager</p>
@@ -274,36 +248,28 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
+                        <!-- Coach Expense  -->
                         <div class="justify-center">
                             <button id="calculate-total"
-                                class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate Total</button>
+                                class="my-3 btn btn-primary btn-block font-bold text-base">Calculate Total</button>
                         </div>
 
 
-
+                        <!-- Total Expense -->
                         <div class="flex gap-3 justify-between items-center my-5">
                             <div class="font-semibold text-lg text-gray-400">Total</div>
                             <div class="font-semibold text-lg text-orange-500">$<span id="total-expense">00</span></div>
 
                         </div>
-
                     </div>
                 </div>
-
-
-
+                <!-- End Cost Calculation  -->
 
             </div>
+            <!-- End Sidebar  -->
+
         </div>
-
-
-
+        <!-- Structure Build End  -->
     </main>
 
 
@@ -327,7 +293,7 @@
             <p class="py-6 text-center text-gray-300">You have selected five players! You can't select more than five at
                 a time.</p>
             <div class="modal-action justify-center">
-                <a href="#" class="btn btn-primary btn-wide justify-center">Okay</a>
+                <a href="#" class="btn btn-primary btn-block justify-center">Okay</a>
             </div>
         </div>
     </div>
@@ -340,7 +306,7 @@
             <p class="py-6 text-center text-gray-300">You have entered a invalid number! <br>Please re-enter a valid
                 number and try again. <br>Thank you.</p>
             <div class="modal-action justify-center">
-                <a href="#" class="btn btn-primary btn-wide justify-center">Understand</a>
+                <a href="#" class="btn btn-primary btn-block justify-center">Understand</a>
             </div>
         </div>
     </div>

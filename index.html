@@ -43,7 +43,7 @@
     </header>
 
 
-    <main class="container py-10 px-20">
+    <main class="container pt-16 px-20 pb-40">
         <!-- Structure Build  -->
         <div class="grid grid-cols-4 gap-4">
 
@@ -61,7 +61,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Lionel Messi</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button  class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -81,7 +82,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Neymar Jr</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -100,7 +102,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Kylian Mbappé</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -120,7 +123,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Vítor Machado</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -140,7 +144,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Sergio Ramos</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -160,7 +165,8 @@
                             <h2 class="text-2xl font-extrabold text-white">Renato Sanches</h2>
                             <p class="text-gray-500 mb-1">36 Goals • 120 Assist</p>
                             <div class="justify-center">
-                                <button disable class="btn btn-primary btn-wide font-bold text-base" onclick="playerSelect(this)">SELECT</button>
+                                <button disable class="btn btn-primary btn-wide font-bold text-base"
+                                    onclick="playerSelect(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -184,7 +190,8 @@
                     </div>
                     <div>
                         <div>
-                            <ol id="selected-player-list" class="text-white text-lg list-decimal list-inside leading-10 mb-5">
+                            <ol id="selected-player-list"
+                                class="text-white text-lg list-decimal list-inside leading-10 mb-5">
                                 <!-- <li>Neymar</li>
                                 <li>Neymar</li>
                                 <li>Neymar</li>
@@ -215,12 +222,13 @@
                         </div>
 
                         <div class="justify-center">
-                            <button  id="calculate-player-expense" class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate</button>
+                            <button id="calculate-player-expense"
+                                class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate</button>
                         </div>
 
                         <div class="flex gap-3 justify-between items-center my-5">
                             <div class="font-semibold text-lg text-gray-400">Player Expense</div>
-                            <div class="font-semibold text-lg text-white">$<span id="player-expense">5000</span></div>
+                            <div class="font-semibold text-lg text-white">$<span id="player-expense">00</span></div>
                         </div>
 
 
@@ -231,9 +239,9 @@
                                 <input id="manager-input-field" type="text" placeholder="$1000"
                                     class="input input-bordered text-white w-2/4 rounded-none border-white bg-black border-2" />
                             </div>
-    
-    
-    
+
+
+
                             <div class="flex gap-3 justify-around items-center my-3">
                                 <p class="font-semibold text-lg text-gray-400">Coach</p>
                                 <input id="coach-input-field" type="text" placeholder="$1000"
@@ -248,15 +256,16 @@
 
 
                         <div class="justify-center">
-                            <button disable class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate Total</button>
+                            <button id="calculate-total"
+                                class="my-3 btn btn-primary btn-wide font-bold text-base">Calculate Total</button>
                         </div>
 
 
-                        
+
                         <div class="flex gap-3 justify-between items-center my-5">
                             <div class="font-semibold text-lg text-gray-400">Total</div>
-                            <div class="font-semibold text-lg text-orange-500">$<span id="total-expense">5000</span></div>
-                            
+                            <div class="font-semibold text-lg text-orange-500">$<span id="total-expense">00</span></div>
+
                         </div>
 
                     </div>
@@ -273,24 +282,47 @@
     </main>
 
 
-    <footer>
+
+    <footer class="px-5 py-10 border-t text-center text-gray-400 text-lg border-gray-600">
+
+        <p>Copyright @ 2022 All Rights Reserved.</p>
 
     </footer>
 
 
 
-    <!-- Modal  -->
-    <!-- The button to open modal -->
-<!-- Put this part before </body> tag -->
-<div class="modal" id="selectWarning">
-  <div class="modal-box bg-gray border-slate-600 border-2">
-    <h3 class="text-center font-bold text-2xl text-orange-600">Selection Limit Reached!</h3>
-    <p class="py-6 text-center text-gray-300">You have selected five players! You can't select more than five at a time.</p>
-    <div class="modal-action justify-center">
-     <a href="#" class="btn btn-primary btn-wide justify-center">Okay</a>
+
+
+
+
+    <!-- Selection Warning Popup  -->
+    <div class="modal" id="selectWarning">
+        <div class="modal-box bg-gray border-slate-600 border-2">
+            <h3 class="text-center font-bold text-2xl text-orange-600">Selection Limit Reached!</h3>
+            <p class="py-6 text-center text-gray-300">You have selected five players! You can't select more than five at
+                a time.</p>
+            <div class="modal-action justify-center">
+                <a href="#" class="btn btn-primary btn-wide justify-center">Okay</a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+
+
+    <!-- Error Warning Popup  -->
+    <div class="modal" id="errorWarning">
+        <div class="modal-box bg-gray border-slate-600 border-2">
+            <h3 class="text-center font-bold text-2xl text-orange-600">Error!</h3>
+            <p class="py-6 text-center text-gray-300">You have entered a invalid number! <br>Please re-enter a valid
+                number and try again. <br>Thank you.</p>
+            <div class="modal-action justify-center">
+                <a href="#" class="btn btn-primary btn-wide justify-center">Understand</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 

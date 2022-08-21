@@ -2,7 +2,7 @@ function playerSelect(element) {
     const playerList = document.getElementById("selected-player-list");
   
     const numberOfPlayer = numberOfSelectedPlayer();
-    if (numberOfPlayer > 5) {
+    if (numberOfPlayer >= 5) {
       window.location.href = "#selectWarning";
       return;
     }
@@ -18,7 +18,7 @@ function playerSelect(element) {
   
   function numberOfSelectedPlayer(){
       const playerList = document.getElementById("selected-player-list");
-      const playerNumber = playerList.children.length + 1;
+      const playerNumber = playerList.children.length;
       return playerNumber
   }
 
@@ -32,7 +32,7 @@ function playerSelect(element) {
 
   function setElementValue(elementId, value){
     const element = document.getElementById(elementId);
-    element.innerText = value;
+    element.innerText = value.toFixed(2);
   }
 
 

@@ -2,18 +2,19 @@ body {
     font-family: 'Manrope', sans-serif;
     background-color: #151515;
 }
-.title-font{
+
+.title-font {
     font-family: 'Berkshire Swash', cursive;
 }
 
 
 button:disabled,
-button[disabled]{
-  background-color: #A2A9AF!important;
-  color: #fff!important;
+button[disabled] {
+    background-color: #A2A9AF !important;
+    color: #fff !important;
 }
 
 
-.bg-gray{
+.bg-gray {
     background-color: #151515;
 }

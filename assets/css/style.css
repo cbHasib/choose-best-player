@@ -1,5 +1,6 @@
 body {
     font-family: 'Manrope', sans-serif;
+    background-color: #151515;
 }
 .title-font{
     font-family: 'Berkshire Swash', cursive;
@@ -9,4 +10,11 @@ body {
     height: 100%;
     width: auto;
     object-fit: cover;
+}
+
+
+button:disabled,
+button[disabled]{
+  background-color: #A2A9AF!important;
+  color: #fff!important;
 }

@@ -1,0 +1,12 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+.title-font{
+    font-family: 'Berkshire Swash', cursive;
+}
+.header-bg{
+    background-image: url('/assets/img/headder-bg.png');
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}

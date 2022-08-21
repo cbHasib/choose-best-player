@@ -18,3 +18,8 @@ button[disabled]{
   background-color: #A2A9AF!important;
   color: #fff!important;
 }
+
+
+.bg-gray{
+    background-color: #151515;
+}
